@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <meta name="description" content="A Simple beautiful card App for training in JSF"/>
+    <meta name="author" content="Willy Nzesseu"/>
+
+    <title><ui:insert name="title">Beautiful Card App</ui:insert></title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+    <!-- Materialize core CSS -->
+    <h:outputStylesheet name="materialize/css/materialize.min.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <f:verbatim>
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </f:verbatim>
+    <ui:insert name="head"/>
+</h:head>
+<h:body>
+    <ui:insert name="body"/>
+
+    <nav role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="index.xhtml" class="brand-logo">JSF Learning</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="entervalidate.xhtml">ValidateByEnter</a></li>
+                <li><a href="pile.xhtml">Pile</a></li>
+                <li><a href="face.xhtml">Face</a></li>
+                <li><a style="margin: 1em;">
+                    <h:form>
+                            <h:selectOneMenu value="#{language.localeCode}" onchange="submit()"
+                                             valueChangeListener="#{language.countryLocaleCodeChanged}">
+                                <f:selectItems value="#{language.countriesInMap}"/>
+                            </h:selectOneMenu>
+                    </h:form></a>
+                </li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="entervalidate.xhtml">ValidateByEnter</a></li>
+                <li><a href="pile.xhtml">Pile</a></li>
+                <li><a href="face.xhtml">Face</a></li>
+                <li>
+                    <a><h:form>
+                            <h:selectOneMenu value="#{language.localeCode}" onchange="submit()"
+                                             valueChangeListener="#{language.countryLocaleCodeChanged}">
+                                <f:selectItems value="#{language.countriesInMap}"/>
+                            </h:selectOneMenu>
+                    </h:form></a>
+                </li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <div id="content"><ui:insert name="content">Default content</ui:insert></div>
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+    <script type="application/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="application/javascript">
+        var input = document.getElementsByTagName("input");
+        var inputList = Array.prototype.slice.call(input);
+        for(i = 0;i &lt; input.length; i++)
+        {
+            input[i].style.opacity=100;
+        }
+
+        var select = document.getElementsByTagName("select");
+        var selectList = Array.prototype.slice.call(select);
+        for(i = 0;i &lt; select.length; i++)
+        {
+            select[i].display= select[i].display === 'none' ? 'block' : 'none';select[i].style="display:block;";
+            select[i].classList.add("input-field");
+        }
+    </script>
+
+    <!-- Materialize core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <h:outputScript name="materialize/js/materialize.min.js"/>
+    <h:outputScript name="materialize/js/jquery-3.3.1.min.js"/>
+    <h:outputScript name="materialize/js/init.js"/>
+</h:body>
+
+</html>
