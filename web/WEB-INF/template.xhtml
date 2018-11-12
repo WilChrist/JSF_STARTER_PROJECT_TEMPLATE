@@ -35,7 +35,7 @@
     <nav role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="index.xhtml" class="brand-logo">#{msg.appname}</a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="">Link</a></li>
+                <li><a href="login.xhtml"><i class="material-icons">account_box</i> Login</a></li>
                 <li class="input-field"><a style="margin: 1em;">
                     <h:form>
                             <h:selectOneMenu value="#{language.localeCode}" onchange="submit()"
@@ -47,7 +47,7 @@
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
-                <li><a href="login.xhtml"><i class="material-icons">user</i> Login</a></li>
+                <li><a href="login.xhtml"><i class="material-icons">account_box</i> Login</a></li>
                 <li class="input-field">
                     <a><h:form>
                             <h:selectOneMenu value="#{language.localeCode}" onchange="submit()"
@@ -90,23 +90,6 @@
         </div>
     </footer>
     <script type="application/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="application/javascript">
-        var input = document.getElementsByTagName("input");
-        var inputList = Array.prototype.slice.call(input);
-        for(i = 0;i &lt; input.length; i++)
-        {
-            input[i].style.opacity=100;
-        }
-
-        var select = document.getElementsByTagName("select");
-        var selectList = Array.prototype.slice.call(select);
-        for(i = 0;i &lt; select.length; i++)
-        {
-            select[i].display= select[i].display === 'none' ? 'block' : 'none';select[i].style="display:block;";
-            select[i].classList.add("input-field");
-        }
-    </script>
-
     <!-- Materialize core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
