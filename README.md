@@ -1,6 +1,6 @@
-# Project Title
+# Starter Template For JSF Project
 
-One Paragraph of project description goes here
+This is a basic starter template for JSF Project with Maven and IntelliJ.
 
 ## Getting Started
 
@@ -8,59 +8,36 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
+I hightly recommend you for running this project :
+- IntelliJ Idea (IDE), you can get a free copy [here](https://www.jetbrains.com/idea/download)
+- [Git](https://git-scm.com/)
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Clone or fork this Project and open it in IntelliJ
 
 ```
-Give the example
+git clone https://github.com/WilChrist/JSF_STARTER_PROJECT_TEMPLATE.git
 ```
 
-And repeat
+Edit launch configuration in IntelliJ and add an Artifact of type ``Web Application : Exploded`` (From Module)
+If you use just a web container like Apache Tomcat, you must uncomment this on Pom.xml
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
+```xml
+        <!--<dependency>
+            <groupId>com.sun.faces</groupId>
+            <artifactId>jsf-impl</artifactId>
+            <version>2.2.2</version>
+        </dependency>-->
 ```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+For deploying this app, i recommend you to use [JBoss EAP](https://developers.redhat.com/products/eap/download/)
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Materializecss](https://materializecss.com/getting-started.html) - Open Source toolkit for (mobile-style) styling web site
 
 ## Contributing
 
@@ -68,11 +45,11 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [Git](https://git-scm.com/) for versioning.
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Willy Nzesseu** - *Initial work* - [WilChrist](https://github.com/WilChrist)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
@@ -82,6 +59,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
 * Inspiration
 * etc
