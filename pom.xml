@@ -36,5 +36,12 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>3.0.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.db4o</groupId>
+            <artifactId>com.db4o</artifactId>
+            <version>8.0.276.16149</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/db4o-8.0.276.16149-all-java5.jar</systemPath>
+        </dependency>
     </dependencies>
 </project>

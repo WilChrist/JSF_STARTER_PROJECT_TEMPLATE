@@ -36,7 +36,7 @@
         <div class="nav-wrapper container"><a id="logo-container" href="index.xhtml" class="brand-logo">#{msg.appname}</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="">Link</a></li>
-                <li><a style="margin: 1em;">
+                <li class="input-field"><a style="margin: 1em;">
                     <h:form>
                             <h:selectOneMenu value="#{language.localeCode}" onchange="submit()"
                                              valueChangeListener="#{language.countryLocaleCodeChanged}">
@@ -47,8 +47,8 @@
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
-                <li><a href="">Link</a></li>
-                <li>
+                <li><a href="login.xhtml"><i class="material-icons">user</i> Login</a></li>
+                <li class="input-field">
                     <a><h:form>
                             <h:selectOneMenu value="#{language.localeCode}" onchange="submit()"
                                              valueChangeListener="#{language.countryLocaleCodeChanged}">

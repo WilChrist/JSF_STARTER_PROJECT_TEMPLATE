@@ -38,6 +38,7 @@ For deploying this app, i recommend you to use [JBoss EAP](https://developers.re
 
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Materializecss](https://materializecss.com/getting-started.html) - Open Source toolkit for (mobile-style) styling web site
+* [Db4o](https://en.wikipedia.org/wiki/Db4o) Object Oriented Database
 
 ## Contributing
 

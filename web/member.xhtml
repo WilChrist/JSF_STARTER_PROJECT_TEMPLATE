@@ -1,0 +1,35 @@
+<ui:composition template="/WEB-INF/template.xhtml"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://xmlns.jcp.org/jsf/core"
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <ui:define name="title">
+        Login to Jsf Starter Project
+    </ui:define>
+
+    <ui:define name="content">
+
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br/><br/>
+            <h1 class="header center red-text">#{msg.greeting_text} #{myuser.prenom} #{myuser.nom}</h1><br/>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="section" id="apps">
+
+            <!--   Icon Section   -->
+            <div class="row">
+                <h:form>
+                    <h:commandLink styleClass="btn-large waves-effect waves-light materialize-red white-text"
+                            action="#{login.logout}" value="Logout"/>
+                </h:form>
+            </div>
+
+        </div>
+        <br/><br/>
+    </div>
+    </ui:define>
+</ui:composition>
