@@ -1,6 +1,8 @@
 # Starter Template For JSF Project
 
 This is a basic starter template for JSF Project with Maven and IntelliJ. Feel free to check others branch for more feature. Each branch add a new Feature.
+![Screenshot of the App in English](https://github.com/WilChrist/JSF_STARTER_PROJECT_TEMPLATE/blob/master/e.png)
+![Capture d'écran de l'Application en Français](https://github.com/WilChrist/JSF_STARTER_PROJECT_TEMPLATE/blob/master/2.png)
 
 ## Getting Started
 
