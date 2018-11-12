@@ -1,4 +1,4 @@
-package com.beautifullcard.internationalization;
+package com.jsfstarterproject.internationalization;
 
 
 import javax.faces.bean.ManagedBean;

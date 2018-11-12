@@ -14,7 +14,7 @@
     <meta name="description" content="A Simple beautiful card App for training in JSF"/>
     <meta name="author" content="Willy Nzesseu"/>
 
-    <title><ui:insert name="title">Beautiful Card App</ui:insert></title>
+    <title><ui:insert name="title">Jsf Starter Project</ui:insert></title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
     <!-- Materialize core CSS -->
     <h:outputStylesheet name="materialize/css/materialize.min.css"/>
@@ -33,7 +33,7 @@
     <ui:insert name="body"/>
 
     <nav role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="index.xhtml" class="brand-logo">JSF Learning</a>
+        <div class="nav-wrapper container"><a id="logo-container" href="index.xhtml" class="brand-logo">#{msg.appname}</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="entervalidate.xhtml">ValidateByEnter</a></li>
                 <li><a href="pile.xhtml">Pile</a></li>
