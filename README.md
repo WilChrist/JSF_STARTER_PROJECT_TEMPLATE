@@ -1,6 +1,7 @@
 # Starter Template For JSF Project
 
 This is a basic starter template for JSF Project with Maven and IntelliJ.
+In this ``Authentication`` Branch, i added authentication, if you want to use it you can work on this branch or merge this branch on the Master Branch.
 
 ## Getting Started
 
